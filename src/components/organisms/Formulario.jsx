@@ -1,10 +1,16 @@
 
 import { useState } from "react";
-import { Form, Input, Button } from "antd";
-import { GithubOutlined } from "@ant-design/icons";
+import { Form, Input, Button, Alert } from "antd";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 
 function Formulario() {
     const [validado, setValidado] = useState(false);
+    const [form] = Form.useForm();
+
+    const enviarFormulario = () => {
+        form.resetFields();
+        setValidado(true);
+    };
 
     return (
         <section id="part-6" className="formulario">
@@ -12,17 +18,29 @@ function Formulario() {
 
             <p>¿Quieres contactarme? Envíame un mensaje.</p>
 
+            {validado && (
+                <Alert
+                    className="aviso-exito"
+                    message="Mensaje enviado correctamente"
+                    type="success"
+                    showIcon
+                    closable
+                    onClose={() => setValidado(false)}
+                />
+            )}
+
             <Form
+                form={form}
                 layout="vertical"
                 className="formulario-contacto"
-                onFinish={() => setValidado(true)}
+                onFinish={enviarFormulario}
                 onValuesChange={() => setValidado(false)}
             >
                 <Form.Item
                     label="Nombre"
                     name="nombre"
                     rules={[
-                        { required: true, message: "Ingresa tu nombre" }
+                        { required: true, whitespace: true, message: "Ingresa tu nombre" }
                     ]}
                 >
                     <Input placeholder="Tu nombre" />
@@ -43,7 +61,7 @@ function Formulario() {
                     label="Mensaje"
                     name="mensaje"
                     rules={[
-                        { required: true, message: "Escribe un mensaje" },
+                        { required: true, whitespace: true, message: "Escribe un mensaje" },
                         { min: 10, message: "Escribe al menos 10 caracteres" }
                     ]}
                 >
@@ -55,13 +73,6 @@ function Formulario() {
                 </Button>
             </Form>
 
-            {validado && (
-                <p role="status">
-                    Formulario validado correctamente.
-                    El envío del mensaje aún no está configurado.
-                </p>
-            )}
-
             <div className="redes-sociales">
                 <a
                     href="https://github.com/fidiazs"
@@ -69,6 +80,14 @@ function Formulario() {
                     rel="noopener noreferrer"
                 >
                     <GithubOutlined /> GitHub
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/felipe-d%C3%ADaz-6516b22bb/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <LinkedinOutlined /> LinkedIn
                 </a>
             </div>
         </section>

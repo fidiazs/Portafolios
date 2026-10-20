@@ -307,7 +307,11 @@ footer {
 }
 
 .redes-sociales {
+  display: flex;
+  align-items: center;
+  gap: 25px;
   margin-top: 30px;
+
 }
 
 .redes-sociales a {
@@ -331,4 +335,14 @@ footer {
 
 .pie-pagina a:hover {
   color: #60a5fa;
+}
+
+
+.aviso-exito {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90%, 450px);
+  z-index: 1000;
 }

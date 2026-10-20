@@ -10,6 +10,24 @@ function Proyectos() {
             titulo: "Portafolio Personal",
             imagen: "/Portafolio.png",
             repositorio: "https://github.com/fidiazs/Portafolios"
+        },
+        {
+            id: 2,
+            titulo: "EduApp",
+            imagen: "/EduApp.png",
+            repositorio: "https://github.com/fidiazs/EduApp"
+        },
+        {
+            id: 3,
+            titulo: "SplitPay",
+            imagen: "/SplitPay.png",
+            repositorio: "https://github.com/fidiazs/SplitPay"
+        },
+        {
+            id: 4,
+            titulo: "ZonaLibros",
+            imagen: "/ZonaLibros.png",
+            repositorio: "https://github.com/fidiazs/evaluacion-formativa"
         }
     ];
 
