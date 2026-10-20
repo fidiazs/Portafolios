@@ -1,16 +1,45 @@
-# React + Vite
+# Portafolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portafolio personal desarrollado con React, donde presento información sobre mí, mi experiencia laboral, estudios y proyectos realizados.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- JavaScript
+- Ant Design
+- CSS
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Presentación personal.
+- Experiencia laboral y estudios.
+- Galería de proyectos con enlaces a GitHub.
+- Formulario de contacto con validación de datos.
+- Enlaces a GitHub y LinkedIn.
 
-## Expanding the Oxlint configuration
+## Instalación y ejecución
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**1. Clonar el repositorio**
+
+`git clone https://github.com/fidiazs/Portafolios.git`
+
+**2. Entrar a la carpeta del proyecto**
+
+`cd Portafolios`
+
+**3. Instalar las dependencias**
+
+`npm install`
+
+**4. Iniciar el proyecto**
+
+`npm run dev`
+
+**5. Abrir en el navegador**
+
+Ingresar a la dirección local que aparezca en la terminal.
+
+## Organización del proyecto
+
+El proyecto utiliza la metodología Atomic Design, organizando los componentes en átomos, moléculas, organismos, plantillas y páginas.
