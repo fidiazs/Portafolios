@@ -18,16 +18,18 @@ function Formulario() {
 
             <p>¿Quieres contactarme? Envíame un mensaje.</p>
 
+
             {validado && (
                 <Alert
                     className="aviso-exito"
-                    message="Mensaje enviado correctamente"
+                    title="Mensaje enviado correctamente"
                     type="success"
                     showIcon
                     closable
                     onClose={() => setValidado(false)}
                 />
             )}
+
 
             <Form
                 form={form}

@@ -4,7 +4,7 @@ import { Timeline } from "antd";
 function Experiencia() {
     const experiencias = [
         {
-            cargo: "Ayudante de profesor de ski",
+            cargo: "Ayudante de profesor de esquí",
             empresa: "La Parva",
             inicio: "07/2023",
             termino: "09/2023"
@@ -25,7 +25,7 @@ function Experiencia() {
 
             <Timeline
                 items={experiencias.map(exp => ({
-                    children: (
+                    content: (
                         <div>
                             <h3>{exp.cargo}</h3>
                             <p>{exp.empresa}</p>
