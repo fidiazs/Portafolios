@@ -315,3 +315,20 @@ footer {
   font-size: 18px;
   text-decoration: none;
 }
+
+
+.pie-pagina.ant-layout-footer {
+  background-color: #1e293b;
+  text-align: center;
+  padding: 25px;
+  color: #94a3b8;
+}
+
+.pie-pagina a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.pie-pagina a:hover {
+  color: #60a5fa;
+}

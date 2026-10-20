@@ -5,9 +5,9 @@ function Estudios() {
     const estudios = [
         {
             id: 1,
-            institucion: "Nombre de tu institución",
-            titulo: "Carrera de Programación",
-            periodo: "Año de inicio - Actualidad"
+            institucion: "Duoc UC",
+            titulo: "Analista Programador",
+            periodo: "2024 - Actualidad"
         }
     ];
 
