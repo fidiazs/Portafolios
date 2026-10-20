@@ -4,6 +4,8 @@ import SobreMi from "./components/organisms/SobreMi.jsx";
 import Experiencia from "./components/organisms/Experiencia.jsx";
 import Estudios from "./components/organisms/Estudios.jsx";
 import Proyectos from "./components/organisms/Proyectos.jsx";
+import Formulario from "./components/organisms/Formulario.jsx";
+
 
 const App = () => (
     <>
@@ -35,10 +37,15 @@ const App = () => (
                 title: 'Mis proyectos',
               },
               {
-                key: 'part-5',
-                href: '#part-5',
-                title: 'Estudios',
+                  key: 'part-5',
+                  href: '#part-5',
+                  title: 'Estudios',
               },
+                {
+                    key: 'part-6',
+                    href: '#part-6',
+                    title: 'Formulario',
+                },
             ]}
         />
       </div>
@@ -56,6 +63,7 @@ const App = () => (
         <Experiencia/>
         <Proyectos/>
         <Estudios/>
+        <Formulario/>
       </div>
 
     </>

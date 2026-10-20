@@ -3,14 +3,16 @@ import TarjetaProyecto from "../molecules/TarjetaProyecto";
 
 function Proyectos() {
 
+
     const proyectos = [
         {
             id: 1,
             titulo: "Portafolio Personal",
-            imagen: "/portafolio.png",
-            repositorio: ""
+            imagen: "/Portafolio.png",
+            repositorio: "https://github.com/fidiazs/Portafolios"
         }
     ];
+
 
     return (
         <section id="part-4" className="proyectos">
