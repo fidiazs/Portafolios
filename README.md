@@ -1,16 +1,26 @@
-# React + Vite
+# Portafolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Instalación y ejecución
 
-Currently, two official plugins are available:
+### 1. Descargar el proyecto
+- Ingresar al repositorio: https://github.com/fidiazs/Portafolios
+- Presionar **Code → Download ZIP**.
+- Descomprimir el archivo descargado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 2. Abrir el proyecto
+- Abrir WebStorm.
+- Seleccionar **File → Open**.
+- Buscar y abrir la carpeta del proyecto descargado.
 
-## React Compiler
+### 3. Instalar las dependencias
+Abrir la terminal de WebStorm con Alt + F12 y ejecutar:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+npm install
 
-## Expanding the Oxlint configuration
+### 4. Ejecutar el proyecto
+En la misma terminal, ejecutar:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+npm run dev
+
+### 5. Abrir el portafolio
+Ingresar en el navegador a la dirección local que aparezca en la terminal
